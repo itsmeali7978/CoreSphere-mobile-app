@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "225557569783",
+    "project_id": "coresphere-e0bfd",
+    "storage_bucket": "coresphere-e0bfd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225557569783:android:73ad675e03e8ec6c2fb3f2",
+        "android_client_info": {
+          "package_name": "com.example.coresphere_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC64b3KcbfUh9f_72Qr32X1tk-g-jzErHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225557569783:android:af83fd370880de622fb3f2",
+        "android_client_info": {
+          "package_name": "sa.housecare.coresphere"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC64b3KcbfUh9f_72Qr32X1tk-g-jzErHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

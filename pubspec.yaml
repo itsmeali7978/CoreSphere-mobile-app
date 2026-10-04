@@ -1,0 +1,84 @@
+name: coresphere_mobile
+description: A new Flutter project for CoreSphere Enterprise ERP.
+publish_to: 'none'
+
+version: 1.0.0+4
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management & Routing
+  get: ^4.6.6
+
+  # Networking
+  dio: ^5.4.3
+  
+  # Storage
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.2
+
+  # Device & App Info
+  package_info_plus: ^8.0.0
+  device_info_plus: ^10.1.0
+  connectivity_plus: ^6.0.3
+
+  # PDF, Printing & Sharing
+  pdf: ^3.10.8
+  printing: ^5.13.1
+  share_plus: ^10.0.0
+  path_provider: ^2.1.2
+  open_filex: ^4.4.0
+
+  # Utilities
+  intl: ^0.19.0
+  logger: ^2.0.2
+  url_launcher: ^6.2.5
+
+  # UI & Responsive
+  flutter_screenutil: ^5.9.0
+  cached_network_image: ^3.3.1
+  image_picker: ^1.1.2
+  image_cropper: ^8.0.2
+  flutter_image_compress: ^2.3.0
+  file_picker: ^11.0.3
+  calendar_date_picker2: ^1.1.6
+  firebase_core: ^4.13.0
+  firebase_messaging: ^16.5.0
+  flutter_local_notifications: ^20.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/logo.png"
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: "assets/images/logo.png"
+  android_12:
+    image: "assets/images/logo.png"
+    color: "#FFFFFF"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: SaudiRiyal
+      fonts:
+        - asset: assets/fonts/saudi_riyal.ttf
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/Amiri-Regular.ttf
