@@ -56,13 +56,12 @@ class DefaultFirebaseOptions {
     projectId: 'coresphere-e0bfd',
     storageBucket: 'coresphere-e0bfd.firebasestorage.app',
   );
-
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyBNJ5TFRQxaMUAihsc6_S6d5QQNyrYIPgM',
-    appId: '1:225557569783:ios:223a6bd69d8dbd612fb3f2',
+    appId: '1:225557569783:ios:4f14573c4ec7840e2fb3f2',
     messagingSenderId: '225557569783',
     projectId: 'coresphere-e0bfd',
     storageBucket: 'coresphere-e0bfd.firebasestorage.app',
-    iosBundleId: 'sa.housecare.coresphere',
+    iosBundleId: 'sa.housecare.coresphereios',
   );
 }

@@ -53,28 +53,37 @@ Future<void> initServices() async {
 class CoreSphereApp extends StatelessWidget {
   const CoreSphereApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    final prefs = Get.find<PrefsService>();
-    final languageCode = prefs.getLanguage();
-    final locale = languageCode == 'ar' ? const Locale('ar', 'SA') : const Locale('en', 'US');
+ @override
+Widget build(BuildContext context) {
+  final prefs = Get.find<PrefsService>();
 
-    return ScreenUtilInit(
-      designSize: const Size(375, 812), // Standard mobile design size
-      minTextAdapt: true,
-      splitScreenMode: true,
-      builder: (context, child) {
-        return GetMaterialApp(
-          title: AppConstants.appName,
-          theme: AppTheme.lightTheme,
-          debugShowCheckedModeBanner: false,
-          translations: AppTranslations(),
-          locale: locale,
-          fallbackLocale: const Locale('en', 'US'),
-          initialRoute: AppPages.initial,
-          getPages: AppPages.routes,
-        );
-      },
-    );
-  }
+  final languageCode = prefs.getLanguage();
+
+  final locale = languageCode == 'ar'
+      ? const Locale('ar', 'SA')
+      : const Locale('en', 'US');
+
+  final screenSize = MediaQuery.of(context).size;
+  final isTablet = screenSize.shortestSide >= 600;
+
+  return ScreenUtilInit(
+    designSize: isTablet
+        ? const Size(820, 1180)
+        : const Size(375, 812),
+    minTextAdapt: true,
+    splitScreenMode: true,
+    builder: (context, child) {
+      return GetMaterialApp(
+        title: AppConstants.appName,
+        theme: AppTheme.lightTheme,
+        debugShowCheckedModeBanner: false,
+        translations: AppTranslations(),
+        locale: locale,
+        fallbackLocale: const Locale('en', 'US'),
+        initialRoute: AppPages.initial,
+        getPages: AppPages.routes,
+      );
+    },
+  );
+}
 }
